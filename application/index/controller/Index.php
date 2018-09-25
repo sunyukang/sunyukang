@@ -3,10 +3,10 @@ namespace app\index\controller;
 use think\Db;
 
 class Index{	
-		//全局私有appId
-		private $appId = 'wx12c922c5c036efef';
-		//入口方法
-		public function index()	{
+	//全局私有appId
+	private $appId = 'wx12c922c5c036efef';
+	//入口方法
+	public function index()	{
 		//获取消息回复并插入数据库
 		$this->getData();
 		//读取最新token
